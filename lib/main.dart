@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaper/Router/Router_App_config.dart';
-import 'package:wallpaper/Screen/HomePage.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -13,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.light(),
       themeMode: ThemeMode.system,
